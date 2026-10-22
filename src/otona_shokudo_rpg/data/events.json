@@ -1,0 +1,55 @@
+[
+  {"id": "depression", "first": true, "title": "世界大恐慌", "text": "景気が急に冷え込み、家計も寄付も細っていく。",
+   "effects": {"budget": -3},
+   "needs": [
+     {"tag": "meal",    "who": "resident", "text": "食費を切り詰める家庭が増えた"},
+     {"tag": "funding", "who": "operator", "text": "寄付が細り、食堂の運営が危うい"},
+     {"tag": "labor",   "who": "producer", "text": "仕事を失い、畑を手伝える人が減った"}]},
+  {"id": "logistics", "title": "物流途絶", "text": "トラックが走れなくなり、食材が届かない。",
+   "effects": {"food": -3},
+   "needs": [
+     {"tag": "supply", "who": "producer",   "text": "出荷先を失い、野菜が畑で傷んでいる"},
+     {"tag": "meal",   "who": "resident",   "text": "お店の棚が空になった"},
+     {"tag": "info",   "who": "government", "text": "どこで何が足りないのか、把握できない"}]},
+  {"id": "blackout", "title": "大規模停電と通信障害", "text": "電気も通信も止まり、冷蔵設備と連絡網が使えない。",
+   "effects": {"infra": -3},
+   "needs": [
+     {"tag": "infra", "who": "operator", "text": "冷蔵設備が止まり、食材が傷む"},
+     {"tag": "info",  "who": "resident", "text": "連絡が取れず、不安が広がる"},
+     {"tag": "labor", "who": "engineer", "text": "復旧に動ける人が足りない"}]},
+  {"id": "rumor", "title": "情報の揺らぎ（デマの拡散）", "text": "「食堂が閉まる」という誤った情報が広がった。",
+   "effects": {"budget": -1},
+   "needs": [
+     {"tag": "info",    "who": "government", "text": "誤情報で窓口に問い合わせが殺到している"},
+     {"tag": "voice",   "who": "resident",   "text": "自分の声が届かないと感じる人が増えた"},
+     {"tag": "funding", "who": "operator",   "text": "デマの影響で寄付が止まった"}]},
+  {"id": "surplus", "title": "規格外野菜が大量に出た", "text": "豊作で、形の悪い野菜がどっさり。",
+   "effects": {"food": 3},
+   "needs": [
+     {"tag": "supply",  "who": "producer", "text": "売り先のない野菜が山積みになっている"},
+     {"tag": "culture", "who": "resident", "text": "季節の恵みを分かち合う場がほしい"}]},
+  {"id": "typhoon", "title": "台風で道路寸断", "text": "道が塞がり、復旧の手が足りない。",
+   "effects": {"infra": -2, "people": -2},
+   "needs": [
+     {"tag": "infra", "who": "operator",   "text": "設備が壊れて、食堂が開けない"},
+     {"tag": "meal",  "who": "resident",   "text": "避難先で温かい食事がとれない"},
+     {"tag": "labor", "who": "government", "text": "復旧の手が足りない"}]},
+  {"id": "youth", "title": "若い世代が集まる文化祭の季節", "text": "街に、新しい発想を持つ若い人が増えている。",
+   "effects": {"people": 2},
+   "needs": [
+     {"tag": "culture",  "who": "resident",   "text": "居場所と発信の場がほしい"},
+     {"tag": "voice",    "who": "government", "text": "若者の声を政策に生かしたい"},
+     {"tag": "funding",  "who": "engineer",   "text": "試作を続ける資金が足りない"}]},
+  {"id": "migrants", "title": "移住者が増えた", "text": "新しい住民が来て、食堂も席もいっぱい。",
+   "effects": {"people": 1, "food": -1},
+   "needs": [
+     {"tag": "labor",   "who": "producer", "text": "新しい担い手と畑の知恵をつなぎたい"},
+     {"tag": "culture", "who": "resident", "text": "新旧の住民が顔を合わせる場がない"},
+     {"tag": "meal",    "who": "operator", "text": "食堂の席も食事も足りない"}]},
+  {"id": "heat", "title": "猛暑と不作", "text": "暑さで作物が傷み、収穫が落ち込んだ。",
+   "effects": {"food": -2},
+   "needs": [
+     {"tag": "supply", "who": "producer", "text": "収穫が減り、出荷できる量が足りない"},
+     {"tag": "meal",   "who": "resident", "text": "食材が高く、食卓が寂しくなった"},
+     {"tag": "info",   "who": "engineer", "text": "収穫と需要のデータが断片的で、判断できない"}]}
+]

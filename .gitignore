@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+build/
+dist/
+.DS_Store
+
+# Local play reports may contain user-entered text.
+my-report.md
+game-report.md

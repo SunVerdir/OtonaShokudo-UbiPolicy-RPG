@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "rounds": 6,
+    "actions_per_round": 2,
+    "resource_cap": 12,
+    "start": {"food": 3, "budget": 3, "people": 3, "infra": 3},
+    "regen":  {"food": 1, "budget": 1, "people": 1, "infra": 0},
+    "taste_cost": {"people": 1}
+  },
+  "resource_labels": {"food": "食材", "budget": "予算", "people": "人手", "infra": "電力・通信"},
+  "tags": {
+    "meal": "食事", "supply": "食材の流通", "funding": "資金", "labor": "担い手",
+    "infra": "電力・通信", "info": "情報", "voice": "参加・声", "culture": "居場所・文化"
+  },
+  "verification": {
+    "cards": {
+      "kpi_funding":    {"title": "KPIと財源",           "question": "何をもって成果とし、そのお金はどこから来るのか？"},
+      "personal_data":  {"title": "個人情報",             "question": "誰のどんな情報を、誰が、どこまで扱ってよいのか？"},
+      "ops_burden":     {"title": "運営負担",             "question": "現場の担い手に、無理が偏っていないか？"},
+      "law":            {"title": "法制度",               "question": "今の制度の中で、何ができて何ができないのか？"},
+      "ai_check":       {"title": "AI誤案内のチェック方法", "question": "AIの提案を、誰がどうやって味見（確認）するのか？"},
+      "participation":  {"title": "参加のし易さ",         "question": "忙しい人・遠い人・声の小さい人も、参加できるか？"},
+      "running_cost":   {"title": "継続費用",             "question": "一度きりでなく、続けるための費用は誰が担うのか？"},
+      "responsibility": {"title": "責任の主体",           "question": "うまくいかなかったとき、誰が責任を引き受けるのか？"}
+    },
+    "tag_to_card": {
+      "meal": "running_cost", "supply": "running_cost", "funding": "kpi_funding", "labor": "ops_burden",
+      "infra": "law", "info": "personal_data", "voice": "participation", "culture": "participation"
+    },
+    "taste_skipped": "ai_check",
+    "role_overlooked": "responsibility"
+  },
+  "memories": [
+    "天変地異さえ生き抜く人生ゲームの要諦",
+    "食と命を守るには",
+    "持続可能な社会の為の政策とは"
+  ]
+}
